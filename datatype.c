@@ -3,6 +3,25 @@
     Source : StackOverflow
     Date : 30-06-2016
     Description: Excerpt from K&R : short is often 16 bits, long 32 bits and int either 16 bits or 32 bits. Each compiler is free to choose appropriate sizes for its own hardware, subject only to the restriction that shorts and ints are at least 16 bits, longs are at least 32 bits, and short is no longer than int, which is no longer than long.
+
+    In C and C++ memory requirements of some variable :
+
+    signed char: -2^07 to +2^07-1
+    short:       -2^15 to +2^15-1
+    int:         -2^15 to +2^15-1
+    long:        -2^31 to +2^31-1
+    long long:   -2^63 to +2^63-1
+
+    signed char: -2^07 to +2^07-1
+    short:       -2^15 to +2^15-1
+    int:         -2^31 to +2^31-1
+    long:        -2^31 to +2^31-1
+    long long:   -2^63 to +2^63-1
+
+    depends on compiler and architecture of hardware
+
+    The international standard for the C language requires only that the size of short variables should be less than or equal to the size of type int, which in turn should be less than or equal to the size of type long.
+
     Link : http://stackoverflow.com/questions/6155784/range-of-values-in-c-int-and-long-32-64-bits
 */
 
