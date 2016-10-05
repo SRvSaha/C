@@ -13,7 +13,7 @@
 #define CIN(n) scanf("%f",&n);
 using namespace std;
 
-float modulus(float num)
+float modulus_(float num)
 {
     if(num > 0)
         return num;
@@ -122,10 +122,10 @@ int main()
         if(i>0){ // i>0 is used cause for the first case there'll be no sf mean and del E
             mean_sf = (sf + temp) / 2;
             sf_mean_sf = s - mean_sf;
-            //sf_mean_sf = modulus(sf_mean_sf); //This is the absolute(modulus) function to convert -ve to +ve
+            // sf_mean_sf = modulus(sf_mean_sf); //This is the absolute(modulus) function to convert -ve to +ve
             del_E = total_energy - temp_e;
             del_X = del_E / sf_mean_sf;
-            //del_X = modulus(del_X); //This is the absolute(modulus) function to convert -ve to +ve
+            del_X = modulus_(del_X); //This is the absolute(modulus) function to convert -ve to +ve
             if(del_X < 0)
                 sum -= del_X;
             else
