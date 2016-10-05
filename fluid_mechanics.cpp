@@ -3,7 +3,7 @@
 *   Filename     : fluid_mechanics.c
 *   Timestamp    : 23:52 04-October-2016 (Tuesday)
 *   Description  : Code to Compute the Fluid Mechanics Stuffs
-*   Requirements : C++ 11. For Linux : g++ 4.8.4 (or higher)
+*   Requirements : C++ 11. For Linux : g++ 4.8.4(or higher)
 *
 */
 #include <iostream>
@@ -140,7 +140,7 @@ int main()
     }
     printf("\n================================================================================================================\n\n");
     printf("\t\t\t\t  ******************************************");
-    printf("\n\t\t\t\t     Submission of del_X is : %f\n",sum);
+    printf("\n\t\t\t\t     Summation of del_X is : %f\n",sum);
     printf("\t\t\t\t  ******************************************\n");
     return 0;
 }
