@@ -1,3 +1,11 @@
+/*
+*   @author      : SRvSaha
+*   Filename     : binary_search_recursive.cpp
+*   Timestamp    : 17:08 08-April-2017 (Saturday)
+*   Description  : Recursive Implementation of Binary Search
+*
+*/
+
 #include <bits/stdc++.h>
 #define MAX 100
 using namespace std;
